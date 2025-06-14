@@ -19,13 +19,12 @@ Nova PGIR22akgylf erupted on 2022-08-16 and was captured by TESS during Sector 5
 - Implements background subtraction and detrending methodology
 
 ### 2. [Circular Aperture Photometry Analysis](PGIR22akgylf_lk_circular_aperture.ipynb)  
+** !!! THIS NOTEBOK IS INCOMPLETE !!! **
 **Optimized photometry using circular apertures with systematic parameter testing**
 
 - Tests multiple circular aperture radii (1.5, 2.0, 2.5 pixels)
 - Uses ring-shaped background regions with various inner/outer radii
 - Selects optimal aperture configuration based on Median Absolute Deviation
-- Confirms period detection (~0.1277d) with alternative photometry approach
-- Identifies 0.333d instrumental background modulation affecting all sources
 
 ### 3. [Individual Pixel Analysis](PGIR22akgylf_lk_individual_pixel_lightcurves.ipynb)
 **Per-pixel periodogram analysis to spatially localize periodic signals**
