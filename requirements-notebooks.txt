@@ -1,0 +1,10 @@
+astropy
+ipykernel
+ipywidgets
+notebook
+lightkurve
+matplotlib
+numpy
+photutils
+scipy
+tqdm

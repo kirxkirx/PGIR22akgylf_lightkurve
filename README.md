@@ -63,11 +63,34 @@ Nova PGIR22akgylf erupted on 2022-08-16 and was captured by TESS during Sector 5
 - `photutils` - Aperture photometry
 - `tqdm` - Progress bars
 
-## Installation
+## Starting the notebook environment
+
+The virtual environment is already set up in `.venv`. From a terminal, change to this repository, activate the environment, and start Jupyter Notebook:
 
 ```bash
-pip install lightkurve numpy matplotlib scipy astropy photutils tqdm
+cd /home/kirx/current_work/PGIR/rerun_lk/PGIR22akgylf_lightkurve
+source .venv/bin/activate
+python -m notebook
 ```
+
+Jupyter Notebook will open in your web browser. Open any `.ipynb` file and select the **Python (PGIR22akgylf)** kernel if Jupyter asks you to choose one. Stop the notebook server by pressing `Ctrl+C` in the terminal. When finished, leave the virtual environment with:
+
+```bash
+deactivate
+```
+
+## Recreating the environment
+
+To rebuild the environment later, run these commands from the repository directory:
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-notebooks.txt
+python -m ipykernel install --prefix .venv --name pgir22akgylf --display-name "Python (PGIR22akgylf)"
+```
+
+The notebooks fetch TESS data from MAST, so running their analysis cells requires an internet connection.
 
 ## Usage
 
@@ -83,4 +106,3 @@ The notebooks are designed to be run sequentially, though each can also be execu
 
 If you use this analysis in your research, please cite the associated publication
 (once it's out) and acknowledge the TESS mission and data archive.
-
