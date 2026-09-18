@@ -8,3 +8,4 @@ numpy
 photutils
 scipy
 tqdm
+tornado>=6.5.10

@@ -44,6 +44,15 @@ Nova PGIR22akgylf erupted on 2022-08-16 and was captured by TESS during Sector 5
 - Demonstrates <0.1% period recovery error even with authentic nova complexity
 - Provides confidence in detected periodicities through end-to-end testing
 
+### 5. [Sectors 74 and 75 matched-cadence period search](PGIR22akgylf_sectors74_75_period_search.ipynb)
+**Post-eruption search for the 0.1802-day signal and its 0.3604-day double period**
+
+- Bins the native 200-second Sector 74 and 75 data to the 10-minute Sector 55 cadence
+- Repeats the Sector 55 clipping, detrending, background, and Lomb-Scargle diagnostics
+- Measures the nearby eclipsing binary through a separate proxy aperture
+- Removes a harmonic model of the eclipsing-binary leakage before repeating the search
+- Tests both sectors separately and together at fixed periods of 0.1802 and 0.3604 days
+
 ## Key Findings
 
 - **Periodic Modulation**: Clear 0.1802-day periodicity detected during nova's rise to maximum
@@ -94,7 +103,7 @@ The notebooks fetch TESS data from MAST, so running their analysis cells require
 
 ## Usage
 
-The notebooks are designed to be run sequentially, though each can also be executed independently. Start with the square aperture analysis for the primary results, then explore the alternative approaches and validation tests.
+The notebooks can be executed independently. Start with the square aperture analysis for the primary Sector 55 results. Use the Sectors 74 and 75 notebook for the focused post-eruption comparison.
 
 ## Data Sources
 
